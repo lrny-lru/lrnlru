@@ -1,18 +1,91 @@
-html{
+
+
+html {
+    background:#006D77;
     box-sizing: border-box;
-}
-body {
-    font-family:;
-    margin:0;
-    padding:0;
-
-}
-
-.topnav{
-    display:flex;
-    width:100%;
-    padding: 0px;
-    margin:0;
-    height:;
+    font-family: 'Rajdhani', sans-serif;
+   
+  
+  }
+  
+  body {
+     display:flex;
+    flex-direction: column;
+  }
+  
+  article{
+    margin:auto;
+    width:50%;
+  
+  }
+  
+  
+  
+  h1 {
+      font-family: 'Press Start 2P', sans-serif;
+  }
+  h2{
+    background:#FFDDD2;
+  }
+  .headerName{
+  display:flex;
+  background:#E29578;
+  padding: 0.2em;
+  
+  }
+  
+  
+  
+  section, .header2,.header3{
+   
+   background: #83C5BE;
+   margin-top:10%;
+   margin-bottom:10%;
+   margin:0%;
+  
+   }
+  hr {
+    color:#EDF6F9;
+    border-style: double;
+    width:90em;
+    height:1em;
+  }
+  
+  
+  
+  p{
+    margin-left:10px;
+    padding:0.1em;
+    color:black;
+    font-style: bolder;
+    font-size:larger;
+  }
+  
+  address{
+    margin:auto;
     
-}
+  }
+  
+  
+  .btn-primary,.btn-email {
+    color: #EDF6F9;
+    margin-right:5px;
+    padding-bottom:0%;
+  }
+  
+  a:hover{
+    color: neon greenyellow !important;
+  }
+  
+  .btn {
+    
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 5px;
+    
+  }
+  
+  
+  
