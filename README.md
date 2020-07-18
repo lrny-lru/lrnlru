@@ -1,2 +1,2 @@
-# lrnlru.github.io
+# lrnlruportfolio
 portfolio website for Lauren L Joyner
