@@ -12,6 +12,13 @@ html {
      display:flex;
     flex-direction: column;
   }
+img{
+    max-width: 20%;
+    height: auto;
+    margin:auto;
+    border-radius:8px;
+  }
+  
   
   article{
     margin:auto;
@@ -28,7 +35,6 @@ html {
     background:#FFDDD2;
   }
   .headerName{
-  display:flex;
   background:#E29578;
   padding: 0.2em;
   
