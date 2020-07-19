@@ -1,97 +1,127 @@
-
-
+/*Just settings for the document*/
 html {
-    background:#006D77;
-    box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
-   
-  
-  }
-  
-  body {
-     display:flex;
-    flex-direction: column;
-  }
+  background:#006D77;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+ 
+}
+body {
+   display:flex;
+  flex-direction: column;
+}
+
+/*stuff for the nav button*/
+#home{
+  color:#EDF6F9;
+  font-family:'Press Start 2P',sans-serif;
+  text-decoration:none;
+}
+
+#topnav{
+  position:inherit;
+}
+
+/*settings for the photo*/
 img{
-    max-width: 20%;
-    height: auto;
-    margin:auto;
-    border-radius:8px;
-  }
-  
-  
-  article{
-    margin:auto;
-    width:50%;
-  
-  }
-  
-  
-  
-  h1 {
-      font-family: 'Press Start 2P', sans-serif;
-  }
-  h2{
-    background:#FFDDD2;
-  }
-  .headerName{
-  background:#E29578;
-  padding: 0.2em;
-  
-  }
-  
-  
-  
-  section, .header2,.header3{
+  max-width: 20%;
+  height: auto;
+  margin:auto;
+  border-radius:8px;
+}
+img:hover {
+  transform: scaleX(-1);
+}
+
+/*Settings to make the article container make the layout behave*/
+article{
+  margin:auto;
+  width:50%;
+
+}
+
+/*Personality for the headers*/
+h1,h2,h3 {
+  font-family: 'Press Start 2P', sans-serif;
+}
+h2,h3{
+  background:#FFDDD2;
+  text-align: justify;
+  padding:0.5em;
+  font-size:smaller;
+}
+.headerName{
+display:flex;
+background:#E29578;
+padding: 0.2em;
+}
+
+
+/*flex items (sections) decorations*/
+
+section, .header2,.header3{
+ background: #83C5BE;
+ margin:auto;
+ padding:auto;
+ 
+}
+
+/*decorations for the hr element*/
+hr {
+  color:#EDF6F9;
+  border-style: dashed; 
+}
+
+/*settings for the paragraphs*/
+p{
+  margin-left:10px;
+  padding:0.1em 1em 1em 1em;
+  color:black;
    
-   background: #83C5BE;
-   margin-top:10%;
-   margin-bottom:10%;
-   margin:0%;
   
-   }
-  hr {
-    color:#EDF6F9;
-    border-style: double;
-    width:90em;
-    height:1em;
-  }
+}
+
+
+/* settings for the Contact section*/
+address{
+  margin:auto; 
+}
+
+
+.btn-primary,.btn-email,#instagram {
+  color: #EDF6F9;
+  margin-right:5px;
+  padding-bottom:0%;
   
+}
+
+.btn, #instagram {
   
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 5px;
   
-  p{
-    margin-left:10px;
-    padding:0.1em;
-    color:black;
-    font-style: bolder;
-    font-size:larger;
-  }
-  
-  address{
-    margin:auto;
-    
-  }
-  
-  
-  .btn-primary,.btn-email {
-    color: #EDF6F9;
-    margin-right:5px;
-    padding-bottom:0%;
-  }
-  
-  a:hover{
-    color: neon greenyellow !important;
-  }
-  
-  .btn {
-    
-    font-family: 'Press Start 2P', sans-serif;
-    font-size: 10px;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px 5px;
-    
-  }
-  
-  
+}
+/*hover colors for the buttons*/
+address a:hover{
+  background:#CBFF4D;
+}
+nav a:hover{
+  background:#CBFF4D;
+}
+
+
+/* settings for the footer */
+#foot{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size:9px;
+  color:aliceblue;
+  text-align:center;
+  margin-top:1em;
+}
+
+/*For future work to make the website more mobile friendly*/
+@media screen and (min-width: 520px){}
+@media screen and (min-width: 700px){}
   
