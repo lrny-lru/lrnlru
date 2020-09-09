@@ -5,10 +5,7 @@ html {
   font-family: 'Noto Sans JP', sans-serif;
  
 }
-body {
-   display:flex;
-  flex-direction: column;
-}
+
 
 /*stuff for the nav button*/
 #home{
@@ -23,6 +20,7 @@ body {
 
 /*settings for the photo*/
 img{
+  justify-content:center;
   max-width: 20%;
   height: auto;
   margin:auto;
@@ -54,6 +52,31 @@ display:flex;
 background:#E29578;
 padding: 0.2em;
 }
+#ok h1{
+  text-align:center;
+  margin:0;
+  padding:0;
+}
+header nav{
+  display:flex;
+  justify-content:center;
+
+}
+header nav ul {
+  display:flex;
+  padding-left:0;
+  list-style:none;
+}
+
+div nav ul li a{
+  color:white;
+  margin: 0 20px 0 0;
+  text-decoration :none;
+  
+}
+
+
+
 
 
 /*flex items (sections) decorations*/
@@ -122,6 +145,21 @@ nav a:hover{
 }
 
 /*For future work to make the website more mobile friendly*/
-@media screen and (min-width: 520px){}
-@media screen and (min-width: 700px){}
+@media all and (min-width: 800px){
+  body {
+    display:flex;
+   flex-direction: column;
+ }
+  p{
+    font-size:16px;
+  }
+  /*hover colors for the buttons*/
+address a:hover{
+  background:#CBFF4D;
+}
+nav a:hover{
+  background:#CBFF4D;
+}
+}
+
   
