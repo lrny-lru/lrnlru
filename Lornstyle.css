@@ -1,26 +1,22 @@
 /*Just settings for the document*/
 html {
-  background:#006D77;
+  background:#08415C;
   box-sizing: border-box;
   font-family: 'Noto Sans JP', sans-serif;
  
 }
-
-
-/*stuff for the nav button*/
-#home{
-  color:#EDF6F9;
-  font-family:'Press Start 2P',sans-serif;
-  text-decoration:none;
+body{
+  margin:auto;
+  background:#FFD9DA;
+  width:50%;
 }
 
-#topnav{
-  position:inherit;
-}
+
+
 
 /*settings for the photo*/
 img{
-  justify-content:center;
+  
   max-width: 20%;
   height: auto;
   margin:auto;
@@ -38,28 +34,31 @@ article{
 }
 
 /*Personality for the headers*/
-h1,h2,h3 {
+h1 {
   font-family: 'Press Start 2P', sans-serif;
+  color:#E8C5C6;
 }
 h2,h3{
-  background:#FFDDD2;
+  font-family: 'Press Start 2P', sans-serif;
+  background:#30343F;
   text-align: justify;
   padding:0.5em;
   font-size:smaller;
+  color:#F59EB3;
 }
+/*stuff for the nav button*/
 .headerName{
-display:flex;
-background:#E29578;
+
+background:#30343F;
 padding: 0.2em;
 }
-#ok h1{
-  text-align:center;
-  margin:0;
-  padding:0;
+body header div h1{
+  margin: auto;
 }
 header nav{
   display:flex;
   justify-content:center;
+  background:#BA3365;
 
 }
 header nav ul {
@@ -72,6 +71,8 @@ div nav ul li a{
   color:white;
   margin: 0 20px 0 0;
   text-decoration :none;
+  font-size:30px;
+  padding:
   
 }
 
@@ -82,10 +83,13 @@ div nav ul li a{
 /*flex items (sections) decorations*/
 
 section, .header2,.header3{
- background: #83C5BE;
+ background: #EA638C;
  margin:auto;
  padding:auto;
  
+}
+section header div{
+  background:white;
 }
 
 /*decorations for the hr element*/
@@ -132,6 +136,7 @@ address a:hover{
 }
 nav a:hover{
   background:#CBFF4D;
+  color: magenta;
 }
 
 
@@ -142,14 +147,33 @@ nav a:hover{
   color:aliceblue;
   text-align:center;
   margin-top:1em;
+  background:#08415C;
 }
 
 /*For future work to make the website more mobile friendly*/
 @media all and (min-width: 800px){
+
+
   body {
     display:flex;
    flex-direction: column;
  }
+ .headerName{
+   display:flex;
+   flex-direction:row;
+ 
+  }
+  nav a{
+    font-size:16px;
+  }
+ img{
+   flex:1;
+   justify-items: auto;
+ }
+ img:hover {
+  transform: scaleX(-1);
+}
+
   p{
     font-size:16px;
   }
