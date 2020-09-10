@@ -37,6 +37,7 @@ article{
 h1 {
   font-family: 'Press Start 2P', sans-serif;
   color:#E8C5C6;
+  padding: 0 10px;
 }
 h2,h3{
   font-family: 'Press Start 2P', sans-serif;
@@ -72,7 +73,7 @@ div nav ul li a{
   margin: 0 20px 0 0;
   text-decoration :none;
   font-size:30px;
-  padding:
+  
   
 }
 
@@ -151,7 +152,7 @@ nav a:hover{
 }
 
 /*For future work to make the website more mobile friendly*/
-@media all and (min-width: 800px){
+@media all and (min-width: 600px){
 
 
   body {
@@ -163,7 +164,11 @@ nav a:hover{
    flex-direction:row;
  
   }
-  nav a{
+  div nav{
+    display:flex;
+  }
+div nav ul li a{
+ flex-direction:row;
     font-size:16px;
   }
  img{
@@ -173,9 +178,11 @@ nav a:hover{
  img:hover {
   transform: scaleX(-1);
 }
-
+section{
+  width:100%;
+}
   p{
-    font-size:16px;
+    font-size:12px;
   }
   /*hover colors for the buttons*/
 address a:hover{
@@ -186,4 +193,47 @@ nav a:hover{
 }
 }
 
+  @media all and (mid-width: 300px){
   
+
+
+      body {
+        display:flex;
+       flex-direction: column;
+     }
+     .headerName{
+       display:flex;
+       flex-direction:row;
+     
+      }
+      div nav{
+        display:flex;
+      }
+    div nav ul li a{
+      flex-direction:row;
+      font-size:16px;
+      }
+     img{
+       flex:1;
+       justify-items: auto;
+     }
+     img:hover {
+      transform: scaleX(-1);
+    }
+    section{
+      width:100%;
+    }
+      p{
+        font-size:12px;
+      }
+      /*hover colors for the buttons*/
+    address a:hover{
+      background:#CBFF4D;
+    }
+    nav a:hover{
+      background:#CBFF4D;
+    }
+    
+    
+      
+  }
