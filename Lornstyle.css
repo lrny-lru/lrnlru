@@ -15,15 +15,22 @@ body{
 
 
 /*settings for the photo*/
-img{
+.me{
   
   max-width: 20%;
   height: auto;
   margin:auto;
   border-radius:8px;
 }
-img:hover {
+img.me :hover {
   transform: scaleX(-1);
+}
+ul {
+  list-style: none;
+}
+ul#projects {
+  list-style:none;
+  width:120%;
 }
 
 /*Settings to make the article container make the layout behave*/
@@ -46,6 +53,16 @@ h2,h3{
   padding:0.5em;
   font-size:smaller;
   color:#F59EB3;
+}
+
+img.thumbnail{
+  width:200%;
+  height:200%;
+  margin-left: -97px;
+}
+
+#projects li{
+  list-style: none;
 }
 /*stuff for the nav button*/
 .headerName{
