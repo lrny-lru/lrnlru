@@ -8,7 +8,7 @@ html {
 body{
   margin:auto;
   background:#FFD9DA;
-  width:50%;
+  width:80%;
 }
 
 
@@ -36,7 +36,6 @@ ul#projects {
 /*Settings to make the article container make the layout behave*/
 article{
   margin:auto;
-  width:50%;
 
 }
 
@@ -58,12 +57,26 @@ h2,h3{
 img.thumbnail{
   width:200%;
   height:200%;
-  margin-left: -97px;
+  /* margin-left: -97px; */
 }
 
 #projects li{
   list-style: none;
 }
+
+
+.project {
+  /* display: flex;
+  flex-direction: column;
+  width: 10em; 
+justify-content: flex-end; */
+}
+
+.desc {
+
+}
+
+
 /*stuff for the nav button*/
 .headerName{
 
@@ -80,7 +93,7 @@ header nav{
 
 }
 header nav ul {
-  display:flex;
+  /* display:flex; */
   padding-left:0;
   list-style:none;
 }
@@ -101,9 +114,10 @@ div nav ul li a{
 /*flex items (sections) decorations*/
 
 section, .header2,.header3{
- background: #EA638C;
+ background: #F797B4;
  margin:auto;
  padding:auto;
+ width: 12em;
  
 }
 section header div{
@@ -118,10 +132,9 @@ hr {
 
 /*settings for the paragraphs*/
 p{
-  margin-left:10px;
+  margin-left: -1em;
   padding:0.1em 1em 1em 1em;
   color:black;
-   
   
 }
 
@@ -184,6 +197,13 @@ nav a:hover{
   div nav{
     display:flex;
   }
+
+  header nav ul {
+    display:flex;
+    padding-left:0;
+    list-style:none;
+  }
+  
 div nav ul li a{
  flex-direction:row;
     font-size:16px;
@@ -210,7 +230,9 @@ nav a:hover{
 }
 }
 
-  @media all and (mid-width: 300px){
+
+/*  Full Screen  */
+  @media all and (min-width: 600px){
   
 
 
@@ -251,6 +273,26 @@ nav a:hover{
       background:#CBFF4D;
     }
     
+
+    img.thumbnail{
+      width:200%;
+      height:200%;
+      margin-left: -150px;
+    }
     
+
+    article{
+      margin:auto;
+      width:50%;
+    
+    }
       
+
+    p{
+      
+      padding:0.1em 1em 1em 1em;
+      color:black;
+      
+    }
+
   }
