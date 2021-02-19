@@ -2,37 +2,305 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Just settings for the document*/
+html {
+  background:#08415C;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+ 
+}
+body{
+  margin:auto;
+  background:#FFD9DA;
+  width:80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+/*settings for the photo*/
+.me{
+  
+  max-width: 20%;
+  height: auto;
+  margin:auto;
+  border-radius:8px;
+}
+img.me :hover {
+  transform: scaleX(-1);
+}
+ul {
+  list-style: none;
+}
+ul#projects {
+  list-style:none;
+  width:120%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+/*Settings to make the article container make the layout behave*/
+article{
+  margin:auto;
+
+}
+
+/*Personality for the headers*/
+h1 {
+  font-family: 'Press Start 2P', sans-serif;
+  color:#E8C5C6;
+  padding: 0 10px;
+}
+h2,h3{
+  font-family: 'Press Start 2P', sans-serif;
+  background:#30343F;
+  text-align: justify;
+  padding:0.5em;
+  font-size:smaller;
+  color:#F59EB3;
+}
+
+img.thumbnail{
+  width:200%;
+  height:200%;
+  margin-left: -97px;
+}
+
+#projects li{
+  list-style: none;
+}
+
+
+.project {
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 10em; 
+justify-content: flex-end; */
 }
 
-.App-link {
-  color: #61dafb;
+.desc {
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*stuff for the nav button*/
+.headerName{
+
+background:#30343F;
+padding: 0.2em;
 }
+body header div h1{
+  margin: auto;
+}
+header nav{
+  display:flex;
+  justify-content:center;
+  background:#BA3365;
+
+}
+header nav ul {
+  /* display:flex; */
+  padding-left:0;
+  list-style:none;
+}
+
+div nav ul li a{
+  color:white;
+  margin: 0 20px 0 0;
+  text-decoration :none;
+  font-size:30px;
+  
+  
+}
+
+
+
+
+
+/*flex items (sections) decorations*/
+
+section, .header2,.header3{
+ background: #F797B4;
+ margin:auto;
+ padding:auto;
+ 
+ 
+}
+section header div{
+  background:white;
+}
+
+
+
+/*settings for the paragraphs*/
+p{
+  margin-left: -1em;
+  padding:0.1em 1em 1em 1em;
+  color:black;
+  
+}
+
+
+/* settings for the Contact section*/
+address{
+  margin:auto; 
+}
+
+
+.btn-primary,.btn-email,#instagram {
+  color: #EDF6F9;
+  margin-right:5px;
+  padding-bottom:0%;
+  
+}
+
+.btn, #instagram {
+  
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 5px;
+  
+}
+/*hover colors for the buttons*/
+address a:hover{
+  background:#CBFF4D;
+}
+nav a:hover{
+  background:#CBFF4D;
+  color: magenta;
+}
+
+
+/* settings for the footer */
+#foot{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size:9px;
+  color:aliceblue;
+  text-align:center;
+  margin-top:1em;
+  background:#08415C;
+}
+
+/*For future work to make the website more mobile friendly*/
+@media all and (min-width: 600px){
+
+  
+
+
+  body {
+    display:flex;
+   flex-direction: column;
+ }
+ .headerName{
+   display:flex;
+   flex-direction:row;
+ 
+  }
+  div nav{
+    display:flex;
+  }
+  img.thumbnail{
+    width:200%;
+    height:200%;
+    margin-left: -150px;
+  }
+  header nav ul {
+    display:flex;
+    padding-left:0;
+    list-style:none;
+  }
+  
+div nav ul li a{
+ flex-direction:row;
+    font-size:16px;
+  }
+ img{
+   flex:1;
+   justify-items: auto;
+ }
+ img:hover {
+  transform: scaleX(-1);
+}
+section{
+  width:100%;
+}
+  p{
+    font-size:12px;
+  }
+  /*hover colors for the buttons*/
+address a:hover{
+  background:#CBFF4D;
+}
+nav a:hover{
+  background:#CBFF4D;
+}
+
+
+}
+
+
+/*  Full Screen  */
+  @media all and (min-width: 600px){
+  
+
+
+      body {
+        display:flex;
+       flex-direction: column;
+     }
+     .headerName{
+       display:flex;
+       flex-direction:row;
+     
+      }
+      div nav{
+        display:flex;
+      }
+    div nav ul li a{
+      flex-direction:row;
+      font-size:16px;
+      }
+     img{
+       flex:1;
+       justify-items: auto;
+     }
+     img:hover {
+      transform: scaleX(-1);
+    }
+    section{
+      width:100%;
+    }
+      p{
+        font-size:12px;
+      }
+      /*hover colors for the buttons*/
+    address a:hover{
+      background:#CBFF4D;
+    }
+    nav a:hover{
+      background:#CBFF4D;
+    }
+    
+
+    img.thumbnail{
+      width:200%;
+      height:200%;
+      margin-left: -150px;
+    }
+    
+
+    article{
+      margin:auto;
+      width:50%;
+    
+    }
+      
+
+    p{
+      
+      padding:0.1em 1em 1em 1em;
+      color:black;
+      
+    }
+
+  }

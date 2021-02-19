@@ -5,12 +5,12 @@ function Header() {
       
       <nav>
         <ul>
-          <li><a href="#home">info</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#services">services</a></li>
-          <li><a href='#message'>message me</a></li>
-           <li><a href="#links">links</a></li>
+         
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href='#contact'>Contact</a></li>
+           <li><a href="#links">Links</a></li>
         </ul>
      
          </nav>
