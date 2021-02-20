@@ -22,6 +22,8 @@ function App() {
       <Services />
       <Projects />
       <Linkbox />
+
+      <footer id="foot">©Lauren Joyner</footer>
     </div>
   );
 }

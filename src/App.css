@@ -12,10 +12,18 @@ html {
 body{
   margin:auto;
   background:#FFD9DA;
-  width:80%;
+  width:50em;
 }
-
-
+#root{
+  
+}
+.App{
+  display:flexbox;
+  flex-direction: column;
+  justify-content:space-between;
+  
+  margin:auto;
+}
 
 
 /*settings for the photo*/
@@ -47,7 +55,8 @@ article{
 h1 {
   font-family: 'Press Start 2P', sans-serif;
   color:#E8C5C6;
-  padding: 0 10px;
+  
+ 
 }
 h2,h3{
   font-family: 'Press Start 2P', sans-serif;

@@ -13,7 +13,7 @@ function Header() {
            <li><a href="#links">Links</a></li>
         </ul>
      
-         </nav>
+      </nav>
     </div>
 
   );
