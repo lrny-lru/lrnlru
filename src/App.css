@@ -15,12 +15,11 @@ body{
   width:50em;
 }
 #root{
-  
+  margin:auto;
 }
+
 .App{
-  display:flexbox;
-  flex-direction: column;
-  justify-content:space-between;
+  
   
   margin:auto;
 }
@@ -78,16 +77,6 @@ img.thumbnail{
 }
 
 
-.project {
-  /* display: flex;
-  flex-direction: column;
-  width: 10em; 
-justify-content: flex-end; */
-}
-
-.desc {
-
-}
 
 
 /*stuff for the nav button*/
@@ -139,13 +128,7 @@ section header div{
 
 
 
-/*settings for the paragraphs*/
-p{
-  margin-left: -1em;
-  padding:0.1em 1em 1em 1em;
-  color:black;
-  
-}
+
 
 
 /* settings for the Contact section*/
@@ -191,9 +174,11 @@ nav a:hover{
 }
 
 /*For future work to make the website more mobile friendly*/
-@media all and (min-width: 600px){
+@media all and (min-width: 320px) and (min-width:375px){
 
-  
+ div#root{
+    width:50%;
+  }
 
 
   body {
@@ -202,7 +187,7 @@ nav a:hover{
  }
  .headerName{
    display:flex;
-   flex-direction:row;
+   flex-direction:column;
  
   }
   div nav{
@@ -230,9 +215,8 @@ div nav ul li a{
  img:hover {
   transform: scaleX(-1);
 }
-section{
-  width:100%;
-}
+
+
   p{
     font-size:12px;
   }
